@@ -1,111 +1,130 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Duelo entre Leyendas</title>
-	<link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="bootstrap-3.3.5/css/bootstrap-theme.min.css">
-	<script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+  <head>
+	<title>Pruebita Interfaces</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+ 
+  <body>
+  	<div align="center" >
+  		<h1>Seleccione un personaje para el duelo</h1>
+  	</div>
+
 	<div class="container">
-
-		<div class="page-header">
-			<h1>Selecciona tu personaje para el duelo</h1>
-		</div>
-
+		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
 		<div class="row">
-			<div class="col-sm-4 col-izq">
-
+			<div class="col-xs-6 col-md-4">
 				<div class="row">
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/charlesxavier.jpg"/>
+					<div>
+						<div class="col-xs-6 col-md-6">
+				  		<a href="#"><img class="img-responsive" src="assets/images/amumu.png" alt="amumu"></a>
+						</div>
+				  		<div class="col-xs-6 col-md-6">
+					  		<a href="#"><img class="img-responsive" src="assets/images/olaf.png" alt="olaf"></a>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/gambit.jpg"/>
+					
+					<div>
+						<div class="col-xs-6 col-md-6">
+					  		<a href="#"><img class="img-responsive" src="assets/images/ahri.png" alt="ahri"></a>
 						</div>
+				  		<div class="col-xs-6 col-md-6">
+					  		<a href="#"><img class="img-responsive" src="assets/images/viper.png" alt="viper"></a>
+						</div>
+					</div>
+
+					<div>
+						<div class="col-xs-6 col-md-6">
+					  		<a href="#"><img class="img-responsive" src="assets/images/pudge.png" alt="pudge"></a>
+						</div>
+				  		<div class="col-xs-6 col-md-6">
+					  		<a href="#"><img class="img-responsive" src="assets/images/witchdoctor.png" alt="witchdoctor"></a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- ACA VA LA IMAGEN SELECCIONADA-->
+		  	<div class="col-xs-6 col-md-4" id="detailsPane">
+		        <a href="#"><img class="img-responsive" src="assets/images/blank-detail.jpg" id="itemDetail"></a>
+			</div>
+			
+			<!-- ACA VA LA IMAGEN SELECCIONADA
+			<div id="detailsPane">
+		      <img src="images/blank-detail.jpg" width="346" height="153" id="itemDetail" />
+		      <div id="description"></div>
+		    </div>
+		    -->
+
+			<!-- ACA VAN LA PARTE DERECHA-->
+			<div class="col-xs-6 col-md-4">
+				<!-- ESPECIALIDADES DEL PERSONAJE-->
+				<div class="row">
+					<div class="col-xs-6 col-md-6">
+		              	<h7 class="text-center">ESPECIALIDADES</h7>
+					</div>
+			  		<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Stats-Jugadas</h7>
+					</div>
+					<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">DEBILIDAD</h7>
+					</div>
+			  		<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Stats-Perdidas</h7>
+					</div>
+					<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">MEJOR POSICION</h7>
+					</div>
+			  		<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Stats-Perdidas</h7>
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/magnet.jpg"/>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/nightcrawler.jpg"/>
-						</div>
-					</div>
-				</div>
+				<h3 align="center">JUGAR</h3>
 
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/wolverine.jpg"/>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/storm.jpg"/>
-						</div>
-					</div>
+				<div class="col" >
+					<a href="#" class="btn btn-default">TOP</a>
 				</div>
+				<div class="col">
+					<a href="#" class="btn btn-default">BOTTOM</a>
+				</div>
+				<div class="col">
+					<a href="#" class="btn btn-default">MIDDLE</a>
+				</div>
+				<div class="col" >
+					<a href="#" class="btn btn-default">JUNGLE</a>
+				</div>
+		           		            
+			  		<!--
+			  		<div class="col-xs-6 col-md-6">
+		              <a href="#" class="btn btn-default">JUNGLE</a>
+		            </div>
+		            -->
 
+				<h3 align="center">STATS</h3>
+				<!-- ESTO DEBERIA SER UNA GRILLA-->
 				<div class="row">
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/cyclops.jpg"/>
-						</div>
+					<div class="col-xs-6 col-md-6">
+		              	<h7 class="text-center">Jugadas</h7>
 					</div>
-					<div class="col-sm-6">
-						<div class="thumbnail panelPersonaje">
-							<img src="assets/images/beast.jpg"/>
-						</div>
+			  		<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Stats-Jugadas</h7>
+					</div>
+					<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Perdidas</h7>
+					</div>
+			  		<div class="col-xs-6 col-md-6">
+				  		<h7 class="text-center">Stats-Perdidas</h7>
 					</div>
 				</div>
 			</div>
-
-			<!--elegido-->
-			<div class="col-sm-4 col-central">
-				<div class="panelSeleccionado">
-				<div class="caption">
-						<h3>Javito	</h3>
-				</div>
-					<img src="assets/images/charlesxavier.jpg"/>
-				</div>
-			</div>
-
-			<!-- stats -->
-			<div class="col-sm-4 col-der">
-
-				<h2>Info</h2>
-				<!-- inforamcion que se actualiza segun personaje elegido -->
-
-				<h2>Jugar!</h2>
-				<div class="list-group">
-					<button> BOTTOM </button>
-					<button> MIDDLE </button>
-					<button> JUNGLE </button>
-					<button> TOP </button>
-				</div>
-
-				<h2>Stats</h2>
-				<!-- inforamcion que se actualiza segun personaje elegido -->
-			</div>
-
 		</div>
+    </div>
 
-		<div class="footer">
-			<p>Construcci&oacute;n de Interfaces de Usuario 2015</p>
-		</div>
-
-	</div>
-</body>
+ 	<script src="//code.jquery.com/jquery.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
