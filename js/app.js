@@ -24,7 +24,7 @@ app.controller('DatosPersonajeController', function ($scope) {
 	                                'MejorUbicacion':'TOP',
 	                                'Puntaje':'RAMPAGE'                              
 						};
-	
+	$scope.imagenSeleccionada = {}
 	$scope.images = [
 	 						{id:'amumu',source:'assets/images/amumu.png'},
 	 						{id:'ahri',source:'assets/images/ahri.png'},

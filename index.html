@@ -29,7 +29,8 @@
 				 | groupBy:2-->
 					<div class="row" > 
 						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" img in images">
-						     <img class="img-responsive" ng-src={{img.source}}>
+						     <img class="img-responsive" ng-src={{img.source}} 
+						     ng-click= "imagenSeleccionada={{img}}">
 						     <br>
 						</div>					
 					</div>
@@ -37,7 +38,7 @@
 			</div>
 		  <div class="col-xs-6 col-md-4 center-container" id="detailsPane">
 		  	<form class="well well-lg">
-		      <a href="#"><img class="img-responsive" ng-src={{images}} id="itemDetail"></a>
+		      <a href="#"><img class="img-responsive" ng-src={{imagenSeleccionada.source}} id="itemDetail"></a>
 		    </form>
 			</div>
 			
