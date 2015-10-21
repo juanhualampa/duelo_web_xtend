@@ -25,9 +25,24 @@ app.controller('DatosPersonajeController', function ($scope) {
 	                                'Puntaje':'RAMPAGE'                              
 						};
 	
-	$scope.images = {'/home/luciano/git/duelo_web_xtend/assets/images/amumu.png'};
+	$scope.images = [
+	 						{id:'amumu',source:'assets/images/amumu.png'},
+	 						{id:'ahri',source:'assets/images/ahri.png'},
+	 						{id:'olaf',source:'assets/images/olaf.png'},
+	 						{id:'pudge',source:'assets/images/pudge.png'},
+	 						{id:'witchdoctor',source:'assets/images/witchdoctor.png'},
+	 						{id:'viper',source:'assets/images/viper.png'}
+	 					 ];
+
+
+
 	/*
 	
+	['http://www.w3schools.com/angular/pic_angular.jpg',
+					'http://www.w3schools.com/angular/pic_angular.jpg'
+					];
+
+
 	this.datosDelJuego=function(idParticipante){
 	return {posicionesDuelos:[
 	                  {nombre:'TOP'},

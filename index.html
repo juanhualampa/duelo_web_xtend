@@ -4,9 +4,7 @@
 	<title>Pruebita Interfaces</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 
-	<script src="/home/luciano/node_modules/angular-filter/dist/angular-filter.js"></script>
-	 
-	 <script src="/home/luciano/node_modules/angular/angular.min.js"></script>
+	<script src="lib/angular.min.js"></script>
 	<link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
  
@@ -18,21 +16,29 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 col-md-4">
+
+			<div class="col-xs-6 col-md-4 left-container">
 				<form class="well well-lg">
-					<div class="row" ng-repeat=" image in images groupBy:2">
-						<div class="col-xs-6 col-md-6" ng-repeat=" img in image">
-							<div>
-								<a href="#"><img class="img-responsive" ng-src={{img}} ng-show='img' alt="pudge"></a>								
-							</div>
+				<!-- LISTA -->
+				<!-- <ul>
+					<li ng-repeat="i in images_repo">
+						<img class="img-responsive" ng-src="{{i.source}}">
+					</li>
+				</ul> 
+
+				 | groupBy:2-->
+					<div class="row" > 
+						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" img in images">
+						     <img class="img-responsive" ng-src={{img.source}}>
+						     <br>
 						</div>					
 					</div>
 				</form>
 			</div>
-		  	<div class="col-xs-6 col-md-4" id="detailsPane">
-		  		<form class="well well-lg">
-		        	<a href="#"><img class="img-responsive" src="assets/images/blank-detail.jpg" id="itemDetail"></a>
-		        </form>
+		  <div class="col-xs-6 col-md-4 center-container" id="detailsPane">
+		  	<form class="well well-lg">
+		      <a href="#"><img class="img-responsive" ng-src={{images}} id="itemDetail"></a>
+		    </form>
 			</div>
 			
 			<div class="col-xs-6 col-md-4">
