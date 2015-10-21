@@ -2,11 +2,8 @@ angular.module('duelosApp')
 .service('DuelosService',function(){
 	this.datosDelJuego=function(){
 		return {
-			posicionesDuelos: [ {nombre:'TOP'}, {nombre:'BOT'}, {nombre:'JUNGLE'},{nombre:'MID'}]
-
-		
-		,
-	        personajes:[ 
+			posicionesDuelos: [ {nombre:'TOP'}, {nombre:'BOT'}, {nombre:'JUNGLE'},{nombre:'MID'}],		
+			personajes:[ 
 		              {id:1, 
 		    		   nombre: 'amumu',
 		    		   source: 'assets/images/amumu.png',
@@ -21,7 +18,7 @@ angular.module('duelosApp')
 	                       'Puntaje':'NI-IDEA'                              
 		               },
 		               caracteristicas: 
-		               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+		               {	'Especialidades':['amumu','otraEspecialidad'],
 		          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 		          		 	'MejorPosicion' : ['unaPosicion']
 		        		}
@@ -43,7 +40,7 @@ angular.module('duelosApp')
 		                       'Puntaje':'MANCO'                              
 			               },
 			               caracteristicas: 
-			               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+			               {	'Especialidades':['ahri','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 			          		 	'MejorPosicion' : ['unaPosicion']
 			        		}
@@ -64,7 +61,7 @@ angular.module('duelosApp')
 		                       'Puntaje':'RAMPAGE'                              
 			               },
 			               caracteristicas: 
-			               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+			               {	'Especialidades':['olaf','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 			          		 	'MejorPosicion' : ['unaPosicion']
 			        		}
@@ -85,7 +82,7 @@ angular.module('duelosApp')
 		                       'Puntaje':'DOMINADOR'                              
 			               },
 			               caracteristicas: 
-			               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+			               {	'Especialidades':['pudge','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 			          		 	'MejorPosicion' : ['unaPosicion']
 			        		}
@@ -106,7 +103,7 @@ angular.module('duelosApp')
 		                       'Puntaje':'KILLING-SPREAD'                              
 			               },
 			               caracteristicas: 
-			               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+			               {	'Especialidades':['witch','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 			          		 	'MejorPosicion' : ['unaPosicion']
 			        		}
@@ -126,7 +123,7 @@ angular.module('duelosApp')
 		                       'Puntaje':'NOOB'                              
 			               },
 			               caracteristicas: 
-			               {	'Especialidades':['unaEspecialidad','otraEspecialidad'],
+			               {	'Especialidades':['viper','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
 			          		 	'MejorPosicion' : ['unaPosicion']
 			        		}

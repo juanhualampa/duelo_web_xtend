@@ -25,7 +25,7 @@
 					<div class="row" > 
 						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in datos.personajes">
 						     <img class="img-responsive btn" ng-src={{personaje.source}} 
-						     ng-click= "changeLink(img)">
+						     ng-click= "changeLink(personaje)">
 						     <br>
 						</div>					
 					</div>
@@ -33,14 +33,14 @@
 			</div>
 		  <div class="col-xs-6 col-md-4 center-container" id="detailsPane">
 		  	<form class="well well-lg">
-		      <img class="img-responsive" ng-src={{imagenSeleccionada.source}} id="itemDetail">
+		      <img class="img-responsive" ng-src={{personajeBindeado.source}} id="itemDetail">
 		    </form>
 			</div>
 			
 			<div class="col-xs-6 col-md-4">
 				
 				<form class="well well-lg">
-					<div class="row" ng-repeat=" (key,value) in personajeBindeado" >
+					<div class="row" ng-repeat=" (key,value) in personajeBindeado.caracteristicas" >
 						
 						<div class="col-xs-6 col-md-6">
 			              	<label for="Especialidades">{{key}}</label>
@@ -63,7 +63,7 @@
 					
 					<div class="row">											
 						<table>
-							<tr ng-repeat=" (key,value) in estadisticasPersonajeBindeado">
+							<tr ng-repeat=" (key,value) in personajeBindeado.estadisticas">
 								<td > {{key}} </td>
 								<td > {{value}} </td>													
 							</tr>						
