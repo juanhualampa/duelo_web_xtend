@@ -34,7 +34,9 @@ app.controller('DatosPersonajeController', function ($scope) {
 	 						{id:'viper',source:'assets/images/viper.png'}
 	 					 ];
 
-
+	$scope.changeLink = function(objeto) {          
+	        $scope.imagenSeleccionada = objeto;
+	}
 
 	/*
 	
