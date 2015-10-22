@@ -14,13 +14,13 @@ angular.module('duelosApp')
 	                       'Kills':'1',
 	                       'Deads':'1',
 	                       'Assists':'1',
-	                       'MejorUbicacion':'TOP',
+	                       'Mejor Ubicacion':'TOP',
 	                       'Puntaje':'NI-IDEA'                              
 		               },
 		               caracteristicas: 
 		               {	'Especialidades':['amumu','otraEspecialidad'],
 		          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-		          		 	'MejorPosicion' : ['unaPosicion']
+		          		 	'Mejor Posicion' : ['unaPosicion']
 		        		}
 	                   }
 		              
@@ -36,13 +36,13 @@ angular.module('duelosApp')
 		                       'Kills':'1',
 		                       'Deads':'1',
 		                       'Assists':'1',
-		                       'MejorUbicacion':'TOP',
+		                       'Mejor Ubicacion':'TOP',
 		                       'Puntaje':'MANCO'                              
 			               },
 			               caracteristicas: 
 			               {	'Especialidades':['ahri','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-			          		 	'MejorPosicion' : ['unaPosicion']
+			          		 	'Mejor Posicion' : ['unaPosicion']
 			        		}
 		                   },
 		              
@@ -57,13 +57,13 @@ angular.module('duelosApp')
 		                       'Kills':'1',
 		                       'Deads':'1',
 		                       'Assists':'1',
-		                       'MejorUbicacion':'TOP',
+		                       'Mejor Ubicacion':'TOP',
 		                       'Puntaje':'RAMPAGE'                              
 			               },
 			               caracteristicas: 
 			               {	'Especialidades':['olaf','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-			          		 	'MejorPosicion' : ['unaPosicion']
+			          		 	'Mejor Posicion' : ['unaPosicion']
 			        		}
 		                   },
 		              
@@ -78,13 +78,13 @@ angular.module('duelosApp')
 		                       'Kills':'1',
 		                       'Deads':'1',
 		                       'Assists':'1',
-		                       'MejorUbicacion':'TOP',
+		                       'Mejor Ubicacion':'TOP',
 		                       'Puntaje':'DOMINADOR'                              
 			               },
 			               caracteristicas: 
 			               {	'Especialidades':['pudge','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-			          		 	'MejorPosicion' : ['unaPosicion']
+			          		 	'Mejor Posicion' : ['unaPosicion']
 			        		}
 		                   },
 		              
@@ -99,13 +99,13 @@ angular.module('duelosApp')
 		                       'Kills':'1',
 		                       'Deads':'1',
 		                       'Assists':'1',
-		                       'MejorUbicacion':'TOP',
+		                       'Mejor Ubicacion':'TOP',
 		                       'Puntaje':'KILLING-SPREAD'                              
 			               },
 			               caracteristicas: 
 			               {	'Especialidades':['witch','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-			          		 	'MejorPosicion' : ['unaPosicion']
+			          		 	'Mejor Posicion' : ['unaPosicion']
 			        		}
 		                   },
 		              
@@ -119,13 +119,13 @@ angular.module('duelosApp')
 		                       'Kills':'1',
 		                       'Deads':'1',
 		                       'Assists':'1',
-		                       'MejorUbicacion':'TOP',
+		                       'Mejor Ubicacion':'TOP',
 		                       'Puntaje':'NOOB'                              
 			               },
 			               caracteristicas: 
 			               {	'Especialidades':['viper','otraEspecialidad'],
 			          		 	'Debilidades' : ['unaDebilidad','otraDebilidad'],
-			          		 	'MejorPosicion' : ['unaPosicion']
+			          		 	'Mejor Posicion' : ['unaPosicion']
 			        		}
 		               }
 		              
