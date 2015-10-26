@@ -10,4 +10,10 @@ angular.module("duelosApp")
 	  return {
 	    templateUrl: 'footer-data.html'
 	  };
+	})
+
+.directive('centerData', function() {
+	  return {
+	    templateUrl: 'center-data.html'
+	  };
 	});
