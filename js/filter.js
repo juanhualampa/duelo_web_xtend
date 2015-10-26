@@ -1,5 +1,9 @@
 angular.module("duelosApp")
 
+/*
+ * Lo de abajo es un template, no tendriamos que tocar desde aca!
+ */
+
 .filter('retadorSearch', function(){
 	return function(person,people){
 		if(person == ''){
