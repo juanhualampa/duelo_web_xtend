@@ -7,8 +7,8 @@ angular.module("duelosApp")
 	  };
 	})
 
-.directive('centerData', function() {
+.directive('selectedElementData', function() {
 	  return {
-	    templateUrl: 'center-data.html'
+	    templateUrl: 'selectedElement-data.html'
 	  };
 	});
