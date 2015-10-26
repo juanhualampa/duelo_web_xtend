@@ -27,20 +27,20 @@
 							<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in datos.personajes">
 							     <img class="img-responsive btn" 
 							     ng-src={{personaje.source}} 
-							     ng-click= "changeLink(personaje)">
+							     ng-click= "seleccionarPersonaje(personaje)">
 							</div>					
 						</div>
 					</form>
 			</div>
 		
-		  	<div class="col-xs-6 col-md-4 center-container" id="detailsPane">
+		  	<div ng-if="hayUnPersonajeSeleccionado" class="col-xs-6 col-md-4 center-container" id="detailsPane">
 			  	<form class="well well-lg">
-			      <img class="img-responsive" ng-src={{personajeBindeado.source}}
+			      <img class="img-responsive" ng-src={{personajeSeleccionado.source}}
 			      id="itemDetail" > 
 			    </form>
 			</div>
 			
-			<center-data></center-data>
+			<center-data ng-if="hayUnPersonajeSeleccionado"></center-data>
 			
 		</div>
 		
@@ -61,10 +61,10 @@
 										<div class="col-xs-6 col-md-6 table-responsive">
 											<table class="table table-striped">
 										        <thead>
-											        <img class="img-responsive" ng-src={{personajeBindeado.source}} id="itemDetail" > 
+											        <img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
 										        </thead>
 										        <tbody>
-										            <tr ng-repeat=" (key,value) in personajeBindeado.estadisticas">
+										            <tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
 														<td > {{key}} </td>
 														<td > {{value}} </td>													
 													</tr>						            
@@ -74,10 +74,10 @@
 										<div class="col-xs-6 col-md-6 table-responsive">
 								             <table class="table table-striped">
 										        <thead>
-										        	<img class="img-responsive" ng-src={{personajeBindeado.source}} id="itemDetail" > 
+										        	<img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
 										        </thead>
 										        <tbody>
-										            <tr ng-repeat=" (key,value) in personajeBindeado.estadisticas">
+										            <tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
 														<td > {{key}} </td>
 														<td > {{value}} </td>													
 													</tr>						            
