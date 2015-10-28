@@ -1,105 +1,106 @@
 <!DOCTYPE html>
 <html lang="es" ng-app="duelosApp">
-  <head>
+<head>
 	<title>Pruebita Interfaces</title>
 	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
-	 
+
 	<script src="lib/angular.min.js"></script>
 	<link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<script src="js/app.js"></script>  
-  	<script src="js/service.js"></script>  
-  	<script src="js/controllers.js"></script>  
-  	<script src="js/directives.js"></script>
-  </head>
- 
-  <body data-ng-controller="DatosPersonajeController">
+	<script src="js/service.js"></script>  
+	<script src="js/controllers.js"></script>  
+	<script src="js/directives.js"></script>
+</head>
+
+<body data-ng-controller="DatosPersonajeController">
 	<div class="container-fluid">
 		<header>
 			<div align="center" >
-  				<h1>Seleccione un personaje para el duelo</h1>
-  			</div>		
+				<h1>Seleccione un personaje para el duelo</h1>
+			</div>		
 		</header>
 		
 		<div class="row">
 			<div class="col-xs-6 col-md-4 left-container">
-					<form class="well well-lg">
-						<div class="row" > 
-							<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in datos.personajes">
-							     <img class="img-responsive btn" 
-							     ng-src={{personaje.source}} 
-							     ng-click= "seleccionarPersonaje(personaje)">
-							</div>					
-						</div>
-					</form>
+				<form class="well well-lg">
+					<div class="row" > 
+						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in jugadorSeleccionado.personajes">
+							<img class="img-responsive btn" 
+							ng-src={{personaje.source}} 
+							ng-click= "seleccionarPersonaje(personaje)">
+						</div>					
+					</div>
+				</form>
 			</div>		
-		  				
+
 			<selected-element-data ng-if="hayUnPersonajeSeleccionado"></selected-element-data>
 			
 		</div>
 		
 		<footer-data></footer-data>
 		
+		<!-- modal -->
 		<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-			    	<div class="modal-header">
-			        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			            <h4 class="modal-title" id="myModalLabel">Resultados del duelo</h4>
-			        </div>
-			    <div class="modal-body">
-			        <form action="" >
-			           	<div class="row">
-			           		<div class="col-xs-6 col-md-6 ">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Resultados del duelo</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" >
+							<div class="row">
+								<div class="col-xs-6 col-md-6 ">
 									<div class="row">
 										<div class="col-xs-6 col-md-6 table-responsive">
 											<table class="table table-striped">
-										        <thead>
-											        <img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
-										        </thead>
-										        <tbody>
-										            <tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
+												<thead>
+													<img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
+												</thead>
+												<tbody>
+													<tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
 														<td > {{key}} </td>
 														<td > {{value}} </td>													
 													</tr>						            
-										        </tbody>
-										    </table>
+												</tbody>
+											</table>
 										</div>
 										<div class="col-xs-6 col-md-6 table-responsive">
-								             <table class="table table-striped">
-										        <thead>
-										        	<img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
-										        </thead>
-										        <tbody>
-										            <tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
+											<table class="table table-striped">
+												<thead>
+													<img class="img-responsive" ng-src={{personajeSeleccionado.source}} id="itemDetail" > 
+												</thead>
+												<tbody>
+													<tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
 														<td > {{key}} </td>
 														<td > {{value}} </td>													
 													</tr>						            
-										        </tbody>
-										    </table>
+												</tbody>
+											</table>
 										</div>	
 									</div>	
-							</div>	
-							<div class="col-xs-6 col-md-6">
-								<span>TEXTO1</span>	
-							</div>	
-						</div>				
-					</form>
-			     </div>
-			     <div class="modal-footer">
-			     	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			            <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
-			     </div>
+								</div>	
+								<div class="col-xs-6 col-md-6">
+									<span>TEXTO1</span>	
+								</div>	
+							</div>				
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+					</div>
 				</div>
 			</div>
 		</div>	
 		
 		
 		
-			
-    </div>
+
+	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
-	 
-  </body>
+	<script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
+
+</body>
 </html>
