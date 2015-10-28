@@ -1,0 +1,45 @@
+<div class="col-xs-6 col-md-4 center-container" id="detailsPane">
+	<form class="well well-lg">
+		<img class="img-responsive" ng-src={{personajeSeleccionado.source}}
+			id="itemDetail">
+	</form>
+</div>
+
+<div class="col-xs-6 col-md-4">
+	<form class="well well-lg">
+		<div class="row"
+			ng-repeat=" (key,value) in personajeSeleccionado.caracteristicas">
+			<div class="col-xs-6 col-md-6">
+				<label class="fluid" for="Especialidades" ng-bind="key"></label>
+			</div>
+			<div class="col-xs-6 col-md-6">
+				<label class="fluid" ng-repeat="val in value" ng-bind="val"></label>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3 align="center">JUGAR</h3>
+			<div class="form-group">
+				<button type="submit" class="btn btn-default form-control"
+					ng-repeat="posicion in datos.posicionesDuelos" data-toggle="modal"
+					data-target="#basicModal">{{posicion.nombre}}</button>
+			</div>
+		</div>
+
+		<div class="row table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<h3 align="center">STATS</h3>
+				</thead>
+				<tbody>
+					<tr ng-repeat=" (key,value) in personajeSeleccionado.estadisticas">
+						<td>{{key}}</td>
+						<td>{{value}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+</div>
+
+
