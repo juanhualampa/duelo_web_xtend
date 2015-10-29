@@ -57,3 +57,69 @@
 		</div>
 	</div>
 </div>
+
+
+<div class="modal fade" id="mrXModal" tabindex="-1" role="dialog"
+	aria-labelledby="mrXModal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Resultados del duelo</h4>
+			</div>
+			<div class="modal-body">
+				<form action="">
+					<div class="row">
+						<div class="col-xs-6 col-md-6 ">
+							<div class="row">
+								<div class="col-xs-6 col-md-6 table-responsive">
+									<table class="table table-striped">
+										<thead>
+											<img class="img-responsive"
+												ng-src={{mrXCtrl.personajeSeleccionado.source}} id="itemDetail">
+										</thead>
+										<tbody>
+											<tr
+												ng-repeat=" (key,value) in mrXCtrl.personajeSeleccionado.estadisticas">
+												<td>{{key}}</td>
+												<td>{{value}}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6 col-md-6 table-responsive">
+									<span>TEXTO MR X</span>
+<!-- 									<table class="table table-striped"> -->
+<!-- 										<thead> -->
+<!-- 											<img class="img-responsive" -->
+<!-- 												ng-src={{personajeSeleccionado.source}} id="itemDetail"> -->
+<!-- 										</thead> -->
+<!-- 										<tbody> -->
+<!-- 											<tr -->
+<!-- 												ng-repeat=" (key,value) in personajeSeleccionado.estadisticas"> -->
+<!-- 												<td>{{key}}</td> -->
+<!-- 												<td>{{value}}</td> -->
+<!-- 											</tr> -->
+<!-- 										</tbody> -->
+<!-- 									</table> -->
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-6">
+							<span>TEXTO MRX 2</span>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#basicModal" data-dismiss="modal">Close</button>
+				<!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

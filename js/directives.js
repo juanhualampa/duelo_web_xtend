@@ -3,12 +3,19 @@ angular.module("duelosApp")
 
 .directive('footerData', function() {
 	  return {
-	    templateUrl: 'footer-data.html'
+	    templateUrl: 'partials/footer-data.html'
 	  };
 	})
 
 .directive('selectedElementData', function() {
 	  return {
-	    templateUrl: 'selectedElement-data.html'
+	    templateUrl: 'partials/selectedElement-data.html'
 	  };
-	});
+	})
+	
+.directive('encontreRivalData', function() {
+	  return {
+	    templateUrl: 'partials/encontre-rival.html'
+	  };
+	})	
+	;
