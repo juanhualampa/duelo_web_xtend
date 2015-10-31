@@ -13,6 +13,12 @@ angular.module("duelosApp")
 	  };
 	})
 	
+.directive('mrXData', function() {
+	  return {
+	    templateUrl: 'partials/mrX.html'
+	  };
+	})	
+	
 .directive('encontreRivalData', function() {
 	  return {
 	    templateUrl: 'partials/encontre-rival.html'
