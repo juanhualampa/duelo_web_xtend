@@ -16,7 +16,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'TOP',
+                            'Mejor Ubicacion': 'TOP',
                             'Puntaje': 'NI-IDEA'
                         },
                         caracteristicas: {
@@ -28,7 +28,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'TOP'
                             ]
                         }
@@ -43,7 +43,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'BOTTOM',
+                            'Mejor Ubicacion': 'BOTTOM',
                             'Puntaje': 'MANCO'
                         },
                         caracteristicas: {
@@ -55,7 +55,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'BOTTOM'
                             ]
                         }
@@ -70,7 +70,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'TOP',
+                            'Mejor Ubicacion': 'TOP',
                             'Puntaje': 'RAMPAGE'
                         },
                         caracteristicas: {
@@ -82,7 +82,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'TOP'
                             ]
                         }
@@ -97,7 +97,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'JUNGLE',
+                            'Mejor Ubicacion': 'JUNGLE',
                             'Puntaje': 'DOMINADOR'
                         },
                         caracteristicas: {
@@ -109,7 +109,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'JUNGLE'
                             ]
                         }
@@ -124,7 +124,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'MIDDLE',
+                            'Mejor Ubicacion': 'MIDDLE',
                             'Puntaje': 'KILLING-SPREAD'
                         },
                         caracteristicas: {
@@ -136,7 +136,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'MIDDLE'
                             ]
                         }
@@ -151,7 +151,7 @@ angular.module('duelosApp')
                             'Kills': '1',
                             'Deads': '1',
                             'Assists': '1',
-                            'MejorUbicacion': 'BOTTOM',
+                            'Mejor Ubicacion': 'BOTTOM',
                             'Puntaje': 'NOOB'
                         },
                         caracteristicas: {
@@ -163,7 +163,7 @@ angular.module('duelosApp')
                             'unaDebilidad',
                             'otraDebilidad'
                             ],
-                            'MejorPosicion': [
+                            'Mejor Posicion': [
                             'BOTTOM'
                             ]
                         }
@@ -185,7 +185,7 @@ angular.module('duelosApp')
                                 'Kills': '3',
                                 'Deads': '1',
                                 'Assists': '1',
-                                'MejorUbicacion': 'BOTTOM',
+                                'Mejor Ubicacion': 'BOTTOM',
                                 'Puntaje': 'alguno'
                             },
                             caracteristicas: {
@@ -197,7 +197,7 @@ angular.module('duelosApp')
                                 'unaDebilidad',
                                 'otraDebilidad'
                                 ],
-                                'MejorPosicion': [
+                                'Mejor Posicion': [
                                 'BOTTOM'
                                 ]
                             }
@@ -212,7 +212,7 @@ angular.module('duelosApp')
                                 'Kills': '1',
                                 'Deads': '0',
                                 'Assists': '0',
-                                'MejorUbicacion': 'JUNGLE',
+                                'Mejor Ubicacion': 'JUNGLE',
                                 'Puntaje': 'MANCO'
                             },
                             caracteristicas: {
@@ -224,7 +224,7 @@ angular.module('duelosApp')
                                 'unaDebilidad',
                                 'otraDebilidad'
                                 ],
-                                'MejorPosicion': [
+                                'Mejor Posicion': [
                                 'JUNGLE'
                                 ]
                             }
@@ -239,7 +239,7 @@ angular.module('duelosApp')
                                 'Kills': '2',
                                 'Deads': '3',
                                 'Assists': '0',
-                                'MejorUbicacion': 'BOTTOM',
+                                'Mejor Ubicacion': 'BOTTOM',
                                 'Puntaje': 'RAMPAGE'
                             },
                             caracteristicas: {
@@ -251,7 +251,7 @@ angular.module('duelosApp')
                                 'unaDebilidad',
                                 'otraDebilidad'
                                 ],
-                                'MejorPosicion': [
+                                'Mejor Posicion': [
                                 'BOTTOM'
                                 ]
                             }
@@ -266,7 +266,7 @@ angular.module('duelosApp')
                                 'Kills': '7',
                                 'Deads': '0',
                                 'Assists': '1',
-                                'MejorUbicacion': 'MIDDLE',
+                                'Mejor Ubicacion': 'MIDDLE',
                                 'Puntaje': 'DOMINADOR'
                             },
                             caracteristicas: {
@@ -278,7 +278,7 @@ angular.module('duelosApp')
                                 'unaDebilidad',
                                 'otraDebilidad'
                                 ],
-                                'MejorPosicion': [
+                                'Mejor Posicion': [
                                 'MIDDLE'
                                 ]
                             }

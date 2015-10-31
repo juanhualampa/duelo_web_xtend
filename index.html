@@ -13,14 +13,14 @@
 </head>
 
 <body data-ng-controller="DatosPersonajeController">
-	<div class="container-fluid">
+	<div class="container-fluid spanBorder">
 		<header>
 			<div align="center" >
 				<h1>Seleccione un personaje para el duelo</h1>
 			</div>		
 		</header>
 		
-		<div class="row">
+		<div class="row spanBorder">
 			<div class="col-xs-6 col-md-4 left-container">
 				<form class="well well-lg">
 					<div class="row" > 
@@ -32,9 +32,7 @@
 					</div>
 				</form>
 			</div>		
-
 			<selected-element-data ng-if="hayUnPersonajeSeleccionado"></selected-element-data>
-			
 		</div>
 		
 		<footer-data></footer-data>
