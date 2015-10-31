@@ -172,7 +172,7 @@ angular.module('duelosApp')
                 },
                 rivalesPosibles: [
                 {
-                    rivalUno: {
+                   
                         nombre: 'pepe',
                         personajes: [
                         {
@@ -282,64 +282,9 @@ angular.module('duelosApp')
                                 'MIDDLE'
                                 ]
                             }
-                        },
-                        {
-                            id: 11,
-                            nombre: 'witchdoctor',
-                            source: 'assets/images/witchdoctor.png',
-                            estadisticas: {
-                                'Jugadas': '4',
-                                'Ganadas': '2',
-                                'Kills': '2',
-                                'Deads': '1',
-                                'Assists': '1',
-                                'MejorUbicacion': 'TOP',
-                                'Puntaje': 'KILLING-SPREAD'
-                            },
-                            caracteristicas: {
-                                'Especialidades': [
-                                'witch',
-                                'otraEspecialidad'
-                                ],
-                                'Debilidades': [
-                                'unaDebilidad',
-                                'otraDebilidad'
-                                ],
-                                'MejorPosicion': [
-                                'TOP'
-                                ]
-                            }
-                        },
-                        {
-                            id: 12,
-                            nombre: 'viper',
-                            source: 'assets/images/viper.png',
-                            estadisticas: {
-                                'Jugadas': '2',
-                                'Ganadas': '0',
-                                'Kills': '0',
-                                'Deads': '2',
-                                'Assists': '0',
-                                'MejorUbicacion': 'JUNGLE',
-                                'Puntaje': 'NOOB'
-                            },
-                            caracteristicas: {
-                                'Especialidades': [
-                                'viper',
-                                'otraEspecialidad'
-                                ],
-                                'Debilidades': [
-                                'unaDebilidad',
-                                'otraDebilidad'
-                                ],
-                                'MejorPosicion': [
-                                'BOTTOM'
-                                ]
-                            }
                         }
                         ]
                     }
-                }
                 ]
         }
     }
