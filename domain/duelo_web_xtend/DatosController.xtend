@@ -20,7 +20,13 @@ class DatosController {
 	def Result datos(){
 		val datos = #["Algun dato","Otro dato mas","Un tercer dato"]
 		response.contentType = ContentType.APPLICATION_JSON
-		ok(datos.toJson)
+		try {
+			ok(datos.toJson)
+		}
+		catch (Exception e) {
+			badRequest('''{"msg":"No pude enviarte los datos como esperaba"}''');
+		}
+		
 	}
 	
 	
