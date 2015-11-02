@@ -3,19 +3,23 @@ angular.module("duelosApp")
 
 .directive('footerData', function() {
 	  return {
-	    templateUrl: 'partials/footer-data.html'
+		  restrict: 'E',
+		  templateUrl: 'partials/footer-data.html'
 	  };
 	})
+	
 
 .directive('selectedElementData', function() {
 	  return {
-	    templateUrl: 'partials/selectedElement-data.html'
+		  restrict: 'E',
+		  templateUrl: 'partials/selectedElement-data.html'
 	  };
 	})
 	
 .directive('mrXData', function() {
 	  return {
-	    templateUrl: 'partials/mrX.html'
+		  restrict: 'E',
+		  templateUrl: 'partials/mrX.html'
 	  };
 	})	
 	

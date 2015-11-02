@@ -39,8 +39,8 @@ app.controller('DatosPersonajeController',function ($scope, DuelosService) {
     $scope.obtenerTextoDelServicePostaPrueba = function(){
     	DuelosService.obtenerDatos(
     		function(data) {
-    			alert(data)
     			$scope.textoDelServicePostaPrueba = data;
+    			alert($scope.textoDelServicePostaPrueba);
     		}
     	);
     }
