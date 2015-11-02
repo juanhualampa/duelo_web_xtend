@@ -35,6 +35,17 @@ app.controller('DatosPersonajeController',function ($scope, DuelosService) {
     	}
     }
     
+//    $scope.textoDelServicePostaPrueba = null;
+//    $scope.obtenerTextoDelServicePostaPrueba = function(){
+//    	DuelosService.obtenerDatos(
+//    		function(data) {
+//    			$scope.textoDelServicePostaPrueba = data;
+//    		}
+//    	);
+//    }
+//    
+//    $scope.obtenerTextoDelServicePostaPrueba();
+    
     $scope.buscarRival = function(personajeSel) {
     	var rivalesPosibles = [];
     	for (var i = 0; i < $scope.rivales.length; i++)

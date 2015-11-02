@@ -1,5 +1,8 @@
 angular.module('duelosApp')
-.service('DuelosService',function(){
+.service('DuelosService',function($http){
+//	this.obtenerDatos = function(callback){
+//		$http.get('/datos').then(callback);
+//	}
     this.datosDelJuego=function(){
         return {            
                 posicionesDuelos: [ { nombre: 'TOP' }, { nombre: 'BOTTOM' }, { nombre: 'JUNGLE' }, { nombre: 'MIDDLE' } ],

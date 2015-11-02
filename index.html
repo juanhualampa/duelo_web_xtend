@@ -24,6 +24,7 @@
 			<div class="col-sm-6 col-xs-12 col-md-4 left-container">
 				<form class="well well-lg">
 					<div class="row" > 
+						<span>{{textoDelServicePostaPrueba}}</span>
 						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in jugadorSeleccionado.personajes">
 							<img class="img-responsive btn" 
 							ng-src={{personaje.source}} 
@@ -38,6 +39,7 @@
 		<footer-data></footer-data>
 	</div>
 
+	<script src="node_modules/underscore/underscore-min.js"></script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
 
