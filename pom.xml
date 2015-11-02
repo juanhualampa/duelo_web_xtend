@@ -26,5 +26,12 @@
   		<artifactId>uqbar-domain</artifactId>
   		<version>3.5.1</version>
   	</dependency>
+  	
+  	<dependency>
+  		<groupId>ui_duelo</groupId>
+		<artifactId>ui_duelo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
   </dependencies>
 </project>

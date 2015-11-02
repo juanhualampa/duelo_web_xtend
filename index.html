@@ -23,8 +23,8 @@
 		<div class="row spanBorder">
 			<div class="col-sm-6 col-xs-12 col-md-4 left-container">
 				<form class="well well-lg">
+					<span ng-bind = "textoDelServicePostaPrueba"></span>
 					<div class="row" > 
-						<span>{{textoDelServicePostaPrueba}}</span>
 						<div class="col-xs-6 col-md-6 center-container" ng-repeat=" personaje in jugadorSeleccionado.personajes">
 							<img class="img-responsive btn" 
 							ng-src={{personaje.source}} 
